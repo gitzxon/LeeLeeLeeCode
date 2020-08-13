@@ -1,5 +1,8 @@
 package study.AllTemplate.HouseRobber.i;
 
+/**
+ * dp 典型题目
+ */
 class Solution {
     public int rob(int[] nums) {
 
