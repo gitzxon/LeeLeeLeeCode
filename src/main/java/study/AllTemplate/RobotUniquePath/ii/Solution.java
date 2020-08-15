@@ -1,5 +1,8 @@
 package study.AllTemplate.RobotUniquePath.ii;
 
+/**
+ * 二维数组
+ */
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid == null || obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {
