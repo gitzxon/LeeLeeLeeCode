@@ -29,13 +29,13 @@ public class Solution1 {
         boolean[] dp = new boolean[rowCount];
         dp[0] = true;
 
-        // diff = sum - 2 * sum2
         for (int stone : stones) {
             for (int j = sum / 2; j >= stone; j--) {
                 dp[j] |= dp[j - stone];
             }
         }
 
+        // diff = sum - 2 * sum2
         for (int i = sum / 2; i >= 0; i--) {
             if (dp[i]) {
                 return sum - i * 2;
