@@ -1,9 +1,6 @@
 package study.array.ClockwiseMatrix;
 
-import com.sun.org.apache.regexp.internal.RE;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 稍微顺畅一点的思路。
