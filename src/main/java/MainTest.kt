@@ -1,4 +1,5 @@
 import org.junit.Test
+import java.util.*
 import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.Exchanger
 
@@ -55,4 +56,21 @@ class MainTest {
         println("list.toString() = ${list.toString()}")
     }
 
+    @Test
+    fun testStringFormat() {
+
+        println(String.format("%b", null))
+        println(String.format("%b", 5))
+        println(String.format("%c", 'L'))
+        println(String.format("% 3d", 1))
+        println(String.format("%04d", 1))
+        println(String.format("%e", Math.PI * 100000000000))
+        println(String.format("%013.10f", Math.PI))
+        println(String.format("%n", ""))
+        println(String.format("%h", "helloworld"))
+        println(String.format("%o", 8))
+        println(String.format("%s", 100))
+        println(String.format("%x", 15))
+        println(String.format("%tc", Date()))
+    }
 }

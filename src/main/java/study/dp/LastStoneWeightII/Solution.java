@@ -2,6 +2,9 @@ package study.dp.LastStoneWeightII;
 
 import java.util.Arrays;
 
+/**
+ * 1049. Last Stone Weight II
+ */
 class Solution {
 
     public int lastStoneWeightII(int[] stones) {

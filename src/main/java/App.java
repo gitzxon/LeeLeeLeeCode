@@ -5,13 +5,17 @@ public class App {
     }
 
     private static App d = new App();
+
     {
         System.out.println("before");
     }
+
     private SubClass t = new SubClass();
+
     {
         System.out.println("after");
     }
+
     static {
         System.out.println(3);
     }
@@ -25,6 +29,7 @@ public class App {
         static {
             System.out.println("static init super class");
         }
+
         SuperClass() {
             System.out.println("构造SuperClass");
         }
