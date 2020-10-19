@@ -1,3 +1,5 @@
+package playground
+
 import kotlin.concurrent.thread
 
 class Playground {
@@ -18,7 +20,8 @@ class Playground {
             if (hostManager == null) {
                 synchronized(HostManager::class.java) {
                     if (hostManager == null) {
-                        hostManager = HostManager()
+                        hostManager =
+                            HostManager()
                     }
                 }
             }
@@ -41,7 +44,7 @@ class Playground {
 //            println("${0b11111}%16 = ${0b11111 % 16}")
 //            println("${0b111111}%16 = ${0b111111 % 16}")
 //            println("${0b1111111}%16 = ${0b1111111 % 16}")
-////            Playground().main1(arrayOf())
+////            playground.Playground().main1(arrayOf())
 //
 //            println("little endian")
 //            ByteBuffer.allocate(Integer.BYTES)
