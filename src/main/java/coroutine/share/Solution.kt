@@ -27,15 +27,20 @@ class Solution {
 
         }
 
-        withContext(NonCancellable + dispatcher) {
-            // this code will not be cancelled
-            while (true) {
-                if (this.isActive) {
-                    delay(100)
-                    println("this = ${this}")
-                }
-            }
+        scope.launch {
+            println("second test")
+            println("Thread.currentThread() = ${Thread.currentThread()}")
         }
+
+//        withContext(NonCancellable + dispatcher) {
+//            // this code will not be cancelled
+//            while (true) {
+//                if (this.isActive) {
+//                    delay(100)
+//                    println("this = ${this}")
+//                }
+//            }
+//        }
 
         delay(5000)
 
