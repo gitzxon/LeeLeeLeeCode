@@ -4,10 +4,15 @@ import study.list.single.ListNode;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-import java.util.zip.CheckedOutputStream;
 
+/**
+ * prev larger nodes 比较简单。
+ * 只需要从左往右遍历，利用栈存一下扫过的值。并且，让栈一直是**上小下大**
+ *
+ * 所以，next larger nodes，就从右往左走就行了。
+ * 但是，链表右往左，不能遍历。所以，想到可以 revert 一下。
+ *
+ */
 public class Solution {
 
     public int[] nextLargerNodes(ListNode head) {
