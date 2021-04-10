@@ -1,6 +1,7 @@
 package study.LinkedList.NextGreaterNodeInLinkedList
 
 import org.junit.Test
+import study.list.single.ListNode
 import study.list.single.toLinkedList
 import java.util.*
 import kotlin.test.assertTrue
@@ -9,7 +10,7 @@ class SolutionTest {
     @Test
     fun nextLargerNodes() {
 
-        val input = intArrayOf(2, 1, 5).toLinkedList() ?: return
+        val input: ListNode = intArrayOf(2, 1, 5).toLinkedList() ?: return
         val result = Solution().nextLargerNodes(input)
         println(Arrays.toString(result))
         assertTrue {
