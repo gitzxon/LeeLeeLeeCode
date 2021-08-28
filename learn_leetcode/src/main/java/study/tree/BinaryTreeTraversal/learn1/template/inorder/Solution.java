@@ -1,4 +1,4 @@
-package study.tree.BinaryTreeTraversal.learn1.inorder;
+package study.tree.BinaryTreeTraversal.learn1.template.inorder;
 
 import study.tree.TreeNode;
 
@@ -16,14 +16,17 @@ class Solution {
         TreeNode cur = root;
 
         while (cur != null || !stack.isEmpty()) {
-            while (cur != null) {
+
+            if (cur != null) {
                 stack.push(cur);
                 cur = cur.left;
+            } else {
+                cur = stack.pop();
+                result.add(cur.val);
+                cur = cur.right;
             }
-            cur = stack.pop();
-            result.add(cur.val);
-            cur = cur.right;
         }
         return result;
     }
 }
+

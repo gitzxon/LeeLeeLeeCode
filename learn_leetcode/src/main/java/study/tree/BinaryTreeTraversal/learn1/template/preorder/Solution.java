@@ -1,4 +1,4 @@
-package study.tree.BinaryTreeTraversal.learn1.preorder;
+package study.tree.BinaryTreeTraversal.learn1.template.preorder;
 
 import study.tree.TreeNode;
 
