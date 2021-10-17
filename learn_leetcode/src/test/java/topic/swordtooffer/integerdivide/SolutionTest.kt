@@ -1,4 +1,4 @@
-package study.swordtooffer.integerdivide
+package topic.swordtooffer.integerdivide
 
 import org.junit.Test
 import kotlin.test.assertEquals

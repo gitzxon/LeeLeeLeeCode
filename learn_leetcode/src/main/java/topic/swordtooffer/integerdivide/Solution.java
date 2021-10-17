@@ -1,4 +1,4 @@
-package study.swordtooffer.integerdivide;
+package topic.swordtooffer.integerdivide;
 
 class Solution {
     public int divide(int a, int b) {
