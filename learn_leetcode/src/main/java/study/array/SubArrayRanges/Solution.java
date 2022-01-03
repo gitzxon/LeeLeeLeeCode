@@ -1,5 +1,8 @@
 package study.array.SubArrayRanges;
 
+/**
+ * 暴力
+ */
 class Solution {
     public long subArrayRanges(int[] nums) {
 
