@@ -1,6 +1,11 @@
 package playground
 
 fun main(args: Array<String>) {
+
+    val bytes = "中文".toByteArray(Charsets.UTF_8)
+    String(bytes)
+
+
     val parent = Child(
         "child name", "sports"
     )
